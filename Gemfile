@@ -32,8 +32,14 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
+# Omniauth providers here
+# Use developer during creation as it just passes through
+gem 'omniauth-github', github: 'intridea/omniauth-github'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
+gem 'devise'
 gem 'puma'
 
 # Use Capistrano for deployment
