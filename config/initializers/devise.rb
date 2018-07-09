@@ -280,5 +280,6 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-  config.omniauth :facebook, "256350441807430", "c67fb7771437653d2b7f71b169c90ab4", callback_url: "https://enigmatic-bayou-42469.herokuapp.com/users/auth/facebook/callback"
+  config.omniauth :facebook, "256350441807430", "c67fb7771437653d2b7f71b169c90ab4", callback_url: "http://localhost:5000/users/auth/facebook/callback"
+  config.omniauth :google_oauth2, "179416527825-3eh2he3p0d95pkkbt5u3ngrnedcano1t.apps.googleusercontent.com", "73iUncaLbA1eGkZFadxXeWTw", callback_url: "http://localhost:5000/users/auth/google_oauth2/callback"
 end
